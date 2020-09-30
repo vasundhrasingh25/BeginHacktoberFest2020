@@ -1,0 +1,42 @@
+Q1.Delete all the duplicate elements of an array witthout taking any extra element.
+#include<stdio.h>
+void main()
+{
+int arr[100];
+int i, j, size, count = 0;
+printf("Enter the size of the array : ");
+scanf("%d", &size);
+printf("\n");
+for(i=0; i<size; i++)
+{
+printf("Enter elements in array : ");
+scanf("%d", &arr[i]);
+}
+printf("\nOrignal array is : ");
+for(i=0; i<size; i++)
+{
+printf("%d", arr[i]);
+}
+printf("\nAfter deleting the duplicate elements,new array is: ");
+for(i=0; i<size; i++)
+{
+for(j=i+1; j<size;)
+{
+if(arr[i] == arr[j])
+{
+for(int k=j;k<size;k++)
+{
+arr[k]=arr[k+1];
+}
+size--;
+}
+else
+{
+j++;
+}
+}}
+for(i=0; i<size; i++)
+{
+printf("%d\t",arr[i]);
+}
+}
