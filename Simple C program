@@ -1,4 +1,4 @@
-//Largest Between two
+//Greatest Between the two
 
 #include<stdio.h>
 int main()
@@ -6,9 +6,7 @@ int main()
 int a,b;
 printf("\nEnter two numbers: ");
 scanf("%d %d",&a,&b);
-if(a>b)
-printf("\nLargest number is %d",a);
-else
-printf("\nLargest number is %d",b);
+int max=(a>b)?a:b;
+printf("Greatest number:  %d",max);
 return 0;
 }
