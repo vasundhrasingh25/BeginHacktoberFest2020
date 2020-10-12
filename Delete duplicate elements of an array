@@ -1,4 +1,4 @@
-Q1.Delete all the duplicate elements of an array witthout taking any extra element.
+//Deleting duplicate eleemnst
 #include<stdio.h>
 void main()
 {
